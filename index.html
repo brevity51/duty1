@@ -1,10 +1,24 @@
 <?php
+session_start();
 
-if ($_POST["password"] == 12345) {
-page goes here
+$valid_password = "your_password"; // Change this to your desired password
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $password = $_POST["password"];
+
+    if ($password == $valid_password) {
+        $_SESSION["authenticated"] = true;
+        header("Location: index.html"); // Redirect to the secret page
+        exit();
+    } else {
+        $error_message = "Invalid password. Please try again.";
+    }
 }
-else {
-include 'errorpage'
+
+if (isset($_SESSION["authenticated"]) && $_SESSION["authenticated"] === true) {
+    header("Location: index.html"); // Redirect to the secret page if already authenticated
+    exit();
+}
 ?>
 
 <!DOCTYPE html>
