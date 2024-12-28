@@ -7,7 +7,7 @@ const firebaseConfig = {
   storageBucket: "fashionstylis.firebasestorage.app",
   messagingSenderId: "240769352252",
   appId: "1:240769352252:web:a10d9f9c34b753d3a4f939"
-};
+}; 
 firebase.initializeApp(firebaseConfig);
 const appCheck = firebase.appCheck();
 console.log(appCheck);
