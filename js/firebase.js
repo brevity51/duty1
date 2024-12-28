@@ -1,12 +1,12 @@
 // Initialize Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyBxkKIbifvdZAdAoHKq4mS4e7fiwR3mEbA",
-  authDomain: "foodneuronet.firebaseapp.com",
-  databaseURL: "https://foodneuronet-default-rtdb.firebaseio.com",
-  projectId: "foodneuronet",
-  storageBucket: "foodneuronet.appspot.com",
-  messagingSenderId: "857948478467",
-  appId: "1:857948478467:web:fe5bbc048295f40b068236",
+  apiKey: "AIzaSyAkIZAKGUJls26yUsZOntJd4ej_xSVapIc",
+  authDomain: "fashionstylis.firebaseapp.com",
+  databaseURL: "https://fashionstylis-default-rtdb.firebaseio.com",
+  projectId: "fashionstylis",
+  storageBucket: "fashionstylis.firebasestorage.app",
+  messagingSenderId: "240769352252",
+  appId: "1:240769352252:web:a10d9f9c34b753d3a4f939"
 };
 firebase.initializeApp(firebaseConfig);
 const appCheck = firebase.appCheck();
